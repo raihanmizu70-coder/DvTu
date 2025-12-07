@@ -5,3 +5,29 @@
 - Screenshot upload system
 - Task history tracking
 - Admin approval workflow
+<!-- microjob.html এর মধ্যে -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ... existing code ... -->
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- ... existing code ... -->
+    
+    <!-- Task list এর পর এই সেকশন যোগ করুন -->
+    <script src="../js/telegram-photo-upload.js"></script>
+    <script src="../js/proof-upload-handler.js"></script>
+    
+    <script>
+        // Task শুরু করার ফাংশন
+        function startTask(taskId, taskTitle) {
+            // Show upload interface
+            proofHandler.showUploadInterface(taskId, taskTitle);
+        }
+        
+        // Task cards এ এইভাবে call করুন
+        // <button onclick="startTask('task123', 'Facebook Task')">Start Task</button>
+    </script>
+</body>
+</html>
